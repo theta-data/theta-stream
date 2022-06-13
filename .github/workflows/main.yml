@@ -31,8 +31,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: install and build
         run: |
-          npm ci
-          CI=false npm run build
           sudo rm -rf /var/www/html/theta-stream
           sudo cp -r ./src/ /var/www/html/theta-stream/
           sudo nginx -s reload

@@ -34,5 +34,5 @@ jobs:
           npm ci
           CI=false npm run build
           sudo rm -rf /var/www/html/theta-stream
-          sudo cp -r ./build/ /var/www/html/theta-data-website/
+          sudo cp -r ./build/ /var/www/html/theta-stream/
           sudo nginx -s reload
